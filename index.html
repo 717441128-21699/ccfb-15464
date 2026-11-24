@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0c0a08" />
+    <title>沙画手法训练台</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="stage"></canvas>
+      <svg id="guide-overlay" aria-hidden="true"></svg>
+      <div id="ui-root"></div>
+      <div id="unsupported" hidden>
+        <div class="unsupported-card">
+          <h2>当前浏览器不支持 WebGPU</h2>
+          <p>请使用支持 WebGPU 的 Chrome / Edge 124 以上版本，并在开启硬件加速的平板或电脑上打开。</p>
+          <p id="unsupported-reason"></p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
